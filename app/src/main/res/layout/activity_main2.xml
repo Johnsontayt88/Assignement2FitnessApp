@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.johnsontay.assignement2fitnessapp.Main2Activity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="399dp"
+        android:background="@drawable/a2bmilogo"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:text="Your Bmi Results is..."
+            android:textAlignment="gravity"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Your Height (in Metres)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Your Weight"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Click Here To Know Your BMI" />
+
+    </LinearLayout>
+</RelativeLayout>
